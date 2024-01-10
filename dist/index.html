@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+  <head>
+    <!-- Meta Tags  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:image" content="" />
+    <meta
+      name="csrf-token"
+      content="3uDQjiLg17Xj2mkjligCCSyzxLBWScMB2HNA7gkB"
+    />
+    <!-- Link Tags -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Title -->
+    <title>Digital Shaping</title>
+  </head>
+
+  <body
+    onmousemove="if (!window.__cfRLUnblockHandlers) return false; color_hover(event)"
+    data-cf-modified-47e422a8f75a9fcabcf17f5e-=""
+    class=""
+  >
+    <canvas class="banner_canvas" id="canvas_banner"></canvas>
+    <!-- <audio src="./assets/audio.mp3" autoplay loop></audio>  -->
+    <section class="bg-image">
+<!-- navbar start here -->
+<nav class="pl-[5%] pr-[5%]  pb-[5%] pt-[3%] bg-black text-white">
+  <div class="flex justify-between items-center">
+    <div class="justify-between flex items-center">
+      <div class="flex items-center">
+        <img src="./images/footerlogo.png" alt="">
+        <h2 class="text-white poppins  font-medium lg:text-base text-sm ml-3">Digital<br>Shaping</h2>
+      </div>
+      <!-- NAVIGATION - LARGE SCREENS -->
+      <div class="hidden lg:flex">
+        <ul class="flex ml-20">
+          <li class="lg:text-lg text-sm pr-5 "><a href="" class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;">Home</a></li>
+          <li class="lg:text-lg text-sm pr-5"><a href="" class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;">About Us</a></li>
+          <li class="lg:text-lg text-sm pr-5"><a href="" class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;">Services</a></li>
+          <li class="lg:text-lg text-sm pr-5"><a href="" class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Social icons -->
+    <div class="hidden lg:flex items-center">
+      <a href="#"><i class="fab fa-linkedin text-2xl pr-5 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+      <a href="#"><i class="fab fa-instagram text-2xl pr-5 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+      <a href="#"><i class="fab fa-facebook text-2xl pr-5 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+      <a href="">
+        <button type="button" class=" border border-white hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg  px-5 py-2.5 text-center    font-semibold poppins text-white lg:text-lg text-sm">Contact us</button>
+      </a>
+      <!-- <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+     Contact Us
+        </span>
+        </button> -->
+    </div>
+  </div>
+     <!-- MOBILE NAV ICON -->
+     <div class="lg:hidden absolute top-4 right-8">
+      <button aria-label="navigation" id="mobileIcon" type="button" class="text-white transition duration-300 focus:outline-none focus:text-white hover:text-white">
+        <i class="fas fa-bars text-3xl" id="bars"></i>
+      </button>
+    </div>
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="lg:hidden flex flex-col w-full mx-auto py-8 text-center">
+    <a href="#" class="block text-white cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;">Home</a>
+    <a href="#" class="block text-white= cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;">About Us</a>
+      <a href="#" class="block text-white= cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;">Services</a>
+      <a href="#" class="block text-white= cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;">Portfolio</a>
+      <a href="#" class="block text-white= cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-white uppercase font-medium" style="text-underline-offset: 8px;"><button type="button" class=" border border-white hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg  px-5 py-2.5 text-center    font-semibold poppins text-white ">Contact us</button></a>
+  </div>
+  </nav>
+<!-- navbar end here -->
+
+
+      <!--Hero Section Start  -->
+      <section class="canvas-position  pt-20">
+        <div class="p-[5%] mt-5">
+          <h1
+            data-aos="fade-up"
+            class="heading  font-bold text-animation 2xl:text-9xl md:text-7xl text-4xl leading-[111px] text-center"
+          >
+            Digital Shaping
+          </h1>
+          <div
+            data-aos="fade-up"
+            class="justify-center flex 2xl:mt-[-67px] md:mt-[-35px] mt-[-58px]"
+          >
+            <img
+              src="./assets/img/hero-1.png"
+              alt="logo-img"
+              onclick="if (!window.__cfRLUnblockHandlers) return false; multipleSplats(8) "
+            />
+          </div>
+          <div class="flex md:flex-row justify-between md:mt-0 mt-5">
+            <h2
+              data-aos="fade-up-left"
+              class="subheading font-thin 2xl:text-7xl md:text-5xl text-xl inline-block text-white md:leading-[95px] leading-18"
+            >
+              Marketing<br /><span class="hero-glow">Agency</span>
+            </h2>
+            <h2
+              data-aos="fade-up-right"
+              class="subheading font-thin 2xl:text-7xl md:text-5xl text-xl inline-block text-white md:leading-[95px] leading-18"
+            >
+              Innovative<br /><span class="hero-glow">Services</span>
+            </h2>
+          </div>
+          <div class="justify-center flex rotate" onclick="if (!window.__cfRLUnblockHandlers) return false; multipleSplats(8) ">
+            <!--ring div starts here-->
+            <div class="fancy">
+              <i style="--clr: #00ff0a"></i>
+              <i style="--clr: #ff0057"></i>
+              <i style="--clr: #fffd44"></i>
+              <img
+                src="./assets/img/hero-2.png"
+                alt="logo-img"
+                
+              />
+            </div>
+            <!--ring div ends here-->
+          </div>
+        </div>
+      </section>
+      <!--Hero Section End  -->
+      <!--About Section Start  -->
+      <section class="canvas-position ">
+        <div class="p-[5%]">
+          <div class="w-2/4" data-aos="fade-up">
+            <div class="flex">
+              <img
+                src="./assets/img/arrow.png"
+                alt=""
+                class="w-14 h-14 mt-14"
+              />
+              <h2
+                class="text-white capitalize hover-animation 2xl:text-[127px] xl:text-[100px] text-[52px] subheading pl-9"
+              >
+                A Little about us
+              </h2>
+            </div>
+          </div>
+          <div class="flex md:flex-row flex-col" data-aos="fade-up">
+            <div class="basis-1/2 hidden sm:block" onclick="if (!window.__cfRLUnblockHandlers) return false; multipleSplats(8) ">
+              <img src="./assets/img/line.png" alt="" />
+            </div>
+            <div class="basis-1/2 bottom-0">
+              <h6
+                class="capitalize 2xl:text-xl 2xl:leading-[80px] md:leading-[40px] leading-10 font-normal bodytext text-textcolor"
+              >
+                Welcome to digital shaping, your one-stop solution for
+                cutting-edge digital services. With a passion for innovation and
+                a commitment to excellence, we are here to elevate your brand's
+                digital journey.
+              </h6>
+              <button
+                class="md:mt-[60px] mt-5 glow border border-white border-1 rounded-lg bodytext2 text-lg capitalize px-[30px] py-3"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About Section End  -->
+      <!-- Service section Star -->
+      <section class="canvas-position">
+        <div class="p-[5%]">
+          <div class="flex justify-between md:flex-row flex-col" data-aos="fade-up">
+            <div class="flex">
+              <img src="./assets/img/arrow.png" alt="" class="h-14 w-14 2xl:mt-9  xl:mt-9 mt-3">
+              <h2 class="text-white capitalize font-light 2xl:text-[127px]  xl:text-[100px]  text-[52px] subheading pl-9 hover-animation">we are  <br>expert at<br></h2>
+            </div> 
+            <div  onclick="if (!window.__cfRLUnblockHandlers) return false; multipleSplats(8) ">
+              <!--ring div starts here-->
+              <div class="fancy">
+                <i style="--clr: #00ff0a"></i>
+                <i style="--clr: #ff0057"></i>
+                <i style="--clr: #fffd44"></i>
+                <img class=" rotate"
+                  src="./assets/img/hero-2.png"
+                  alt="logo-img"
+                  
+                />
+              </div>
+              <!--ring div ends here-->
+            </div>
+          </div>
+        
+          <div class="custom-carousel" >
+            <div class="custom-carousel-inner flex gap-10 pt-20 lg:flex-row flex-col">
+              
+              <div class="custom-carousel-item">
+                <div class="border-color-2">
+                  <div class="p-[5%]">
+                    <div class="flex justify-between items-center">
+                      <p class="text-white bodytext2 text-xl font-normal capitalize leading-10">[ 01 ]</p>
+                      <h6 class="text-white subheading text-2xl font-light capitalize text-right">Graphic <br>design</h6>
+                    </div>
+                  
+                    <div>
+                      <p class="text-white bodytext2 text-lg font-normal leading-10 capitalize md:mt-40 mt-20">          Make a lasting impression with  visuals crafted by our creative graphic design team. From logos to marketing collateral, we bring your brand to life.</p>
+                    </div>
+                    <button class="text-white bodytext2 text-xl font-medium capitalize mt-5" >
+                    <a href="">
+                    
+                        read more <i class="fas fa-long-arrow-right"></i>
+                      </a></button>
+                    
+                  </div>
+                  </div>
+              </div>
+        
+             
+              <div class="custom-carousel-item hidden lg:block">
+                <div class="border-color-2">
+                  <div class="p-[5%]">
+                    <div class="flex justify-between items-center">
+                      <p class="text-white bodytext2 text-xl font-normal capitalize leading-10">[ 02 ]</p>
+                      <h6 class="text-white subheading text-2xl font-light capitalize text-right">Android App <br>Development</h6>
+                    </div>
+                  
+                    <div>
+                      <p class=" md:mt-40 mt-20 text-white bodytext2 text-lg font-normal capitalize leading-10 capitalize">Tap into the vast Android user base with our custom app development solutions. We create intuitive and feature-rich Android apps tailored to your specific needs.</p>
+                    </div>
+                    <button class="text-white bodytext2 text-xl font-medium capitalize mt-5" >
+                      <a href="">
+                      
+                          read more <i class="fas fa-long-arrow-right"></i>
+                        </a></button>
+                    
+                  </div>
+                  </div>
+              </div>
+        
+             
+              <div class="custom-carousel-item hidden lg:block">
+                <div class="border-color-2">
+                  <div class="p-[5%]">
+                    <div class="flex justify-between items-center">
+                      <p class="text-white bodytext2 text-xl font-normal capitalize leading-10">[ 03 ]</p>
+                      <h6 class="text-white subheading text-2xl font-light capitalize text-right">SEO <br>Optimization</h6>
+                    </div>
+                  
+                    <div>
+                      <p class=" md:mt-40 mt-20 text-white bodytext2 text-lg font-normal capitalize leading-10 capitalize">          Enhance your online visibility and drive organic traffic with our top-notch SEO optimization services. We employ proven strategies to ensure your business ranks high on search engines.</p>
+                    </div>
+                    <button class="text-white bodytext2 text-xl font-medium capitalize mt-5" >
+                      <a href="">
+                      
+                          read more <i class="fas fa-long-arrow-right"></i>
+                        </a></button>
+                    
+                  </div>
+                  </div>
+              </div>
+        
+             
+              <!-- Custom Carousel indicators -->
+              <ol class="custom-carousel-indicators">
+                <li class="custom-carousel-bullet" data-slide="0">•</li>
+                <li class="custom-carousel-bullet" data-slide="1">•</li>
+                <li class="custom-carousel-bullet" data-slide="3">•</li>
+              </ol> 
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service section Star -->
+      <!-- Team section start -->
+      <section class="canvas-position ">
+        <div class="p-[5%]">
+          <div class=" " data-aos="fade-up">
+            <div class="flex">
+              <img
+                src="./assets/img/arrow.png"
+                alt=""
+                class="w-14 h-14 mt-14"
+              />
+              <h2
+                class="capitalize 2xl:text-[127px] xl:text-[100px] text-[52px] subheading pl-9 hover-animation"
+              >
+                Meet the team
+              </h2>
+            </div>
+          </div>
+
+          <ul role="list">
+            <li class="member" data-aos="fade-up">
+              <a class="member-link" href="#" target="_top">
+                <h2 class="member-name subheading">Alex Khan</h2>
+                <p class="member-role subheading">Founder & CEO</p>
+                <img class="member-photo" src="./assets/img/Alex.jpg" alt="" />
+              </a>
+            </li>
+
+            <li class="member" data-aos="fade-up">
+              <a class="member-link" href="#" target="_top">
+                <h2 class="member-name subheading">Abdul Rehman</h2>
+                <p class="member-role subheading">Developer</p>
+                <img class="member-photo" src="./assets/img/abdul.jpg" alt="" />
+              </a>
+            </li>
+
+            <li class="member" data-aos="fade-up">
+              <a class="member-link" href="#" target="_top">
+                <h2 class="member-name subheading">Kashan Ahmed</h2>
+                <p class="member-role subheading">Designer</p>
+                <img
+                  class="member-photo"
+                  src="./assets/img/kashan.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+
+            <li class="member" data-aos="fade-up">
+              <a class="member-link" href="#" target="_top">
+                <h2 class="member-name subheading">Lala Rukh</h2>
+                <p class="member-role subheading">Content Creator</p>
+                <img class="member-photo" src="./assets/img/lala.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Team section end -->
+      <!-- Recent Projects  Start-->
+      <section class="canvas-position">
+        <div class="md:flex-row flex-col flex p-[5%] gap-20">
+            <div class="basis-1/4 mt-[60px]" >
+              <img src="./assets/img/arrow.png" alt="" class="">
+              <h2 data-aos="fade-up" class=" capitalize font-light 2xl:text-[127px]  xl:text-[100px]  md:text-[52px] text-[28px] subheading hover-animation">Our Recent projects</h2>
+             <a href=""><button class=" glow md:mt-[84px] mt-5 border border-white border-1 rounded-lg text-lg capitalize bodytext2  px-1">More Projects</button></a>
+            </div>
+            <div class="basis-3/4" data-aos="fade-up">
+              <div class="md:flex-row flex-col flex gap-6">
+                <div class="basis-1/2 rounded-[80px] border border-1 md:p-[5%] p-[10%] bg-color-card1">
+                  <p class=" bodytext text-xl font-normal capitalize leading-10">[ 01 ]</p>
+                  <div class="justify-center flex">
+                    <img src="./assets/img/logo.png" alt="" class="">
+                  </div>
+                  <div class="justify-end flex">
+                    <img src="./assets/img/arrow.png" alt="" class="">
+                  </div>
+                </div>
+                <div class="basis-1/2 rounded-[80px] border border-1 md:p-[5%] p-[10%] bg-color-card2">
+                  <p class="bodytext text-xl font-normal capitalize leading-10">[ 02 ]</p>
+                  <div class="justify-center flex">
+                    <img src="./assets/img/logo.png" alt="" class="">
+                  </div>
+                  <div class="justify-end flex">
+                    <img src="./assets/img/arrow.png" alt="" class="">
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5">
+                <div class=" rounded-[80px] border border-1 md:p-[5%] p-[10%] bg-color-card3">
+                  <p class="bodytext text-xl font-normal capitalize leading-10">[ 03 ]</p>
+                  <div class="justify-center flex">
+                    <img src="./assets/img/logo.png" alt="" class="">
+                  </div>
+                  <div class="justify-end flex">
+                    <img src="./assets/img/arrow.png" alt="" class="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Recent Project end -->
+      <!-- customers reviews start here-->
+      <section class="canvas-position">
+ <div class="p-[5%] ">
+  <div class="flex justify-between md:flex-row flex-col" data-aos="fade-up">
+      <div class="flex">
+        <img src="./assets/img/arrow.png" alt="" class="h-14 w-14 2xl:mt-9  xl:mt-9 mt-3">
+        <h2 class="subheading capitalize font-light 2xl:text-[127px]  xl:text-[100px]  text-[32px] pl-9 hover-animation"> Customer  <br>reviews about <br>our work<br></h2>
+      </div> 
+      <div  onclick="if (!window.__cfRLUnblockHandlers) return false; multipleSplats(8) ">
+        <!--ring div starts here-->
+        <div class="fancy">
+          <i style="--clr: #00ff0a"></i>
+          <i style="--clr: #ff0057"></i>
+          <i style="--clr: #fffd44"></i>
+          <img
+          class=" rotate"
+            src="./assets/img/hero-2.png"
+            alt="logo-img"
+            
+          />
+        </div>
+        <!--ring div ends here-->
+      </div>
+</div>
+<div class="carousel border-color-2">
+  <div class="carousel-inner">
+      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+      <div class="carousel-item md:p-[9%]">
+        <div class="flex gap-10 pt-20">
+          <div class="">
+            <div class="p-[5%]">
+            <div class="justify-center text-center flex flex-col">
+              <div class="justify-center flex">
+                <img data-aos="fade-up" src="./assets/img/c1.png" alt="" class="">
+              </div>
+              <h3 data-aos="fade-up" class="text-white heading text-2xl font-bold capitalize">Lala Rukh</h3>
+              <h6 data-aos="fade-up" class="text-textcolor bodytext text-sm font-normal capitalize">Graphic design</h6>
+            </div>
+            <div class="pt-5">
+              <h6 data-aos="fade-up" class="text-white bodytext font-normal text-sm md:text-xl md:leading-[56px] leading-[34px]  capitalize text-center">Working with Digital shaping was a game-changer for our business. Their SEO strategies doubled our online traffic within months. Professionalism, creativity, and timely delivery – Digital shaping excels in every aspect. Our new website is a testament to their expertise.</h6>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item md:p-[9%]">
+        <div class="flex gap-10 pt-20">
+          <div class="">
+            <div class="p-[5%]">
+            <div class="justify-center text-center flex flex-col">
+              <div class="justify-center flex">
+                <img data-aos="fade-up" src="./assets/img/c1.png" alt="" class="">
+              </div>
+              <h3 class="text-white heading text-2xl font-bold capitalize">kashan bhatti</h3>
+              <h6 class="text-textcolor bodytext text-sm font-normal capitalize">Graphic design</h6>
+            </div>
+            <div class="pt-5">
+              <h6 class="text-white bodytext text-sm md:text-xl md:leading-[56px] leading-[34px]  font-normal  capitalize text-center">Working with Digital shaping was a game-changer for our business. Their SEO strategies doubled our online traffic within months. Professionalism, creativity, and timely delivery – Digital shaping excels in every aspect. Our new website is a testament to their expertise.</h6>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item md:p-[9%]">
+        <div class="flex gap-10 pt-20">
+          <div class="">
+            <div class="p-[5%]">
+            <div class="justify-center text-center flex flex-col">
+              <div class="justify-center flex">
+                <img src="./assets/img/c1.png" alt="" class="">
+              </div>
+              <h3 class="text-white heading text-2xl font-bold capitalize">Abdul Rehman Bh</h3>
+              <h6 class="text-textcolor bodytext text-sm font-normal capitalize">Graphic design</h6>
+            </div>
+            <div class="pt-5">
+              <h6 class="text-white bodytext text-sm md:text-xl md:leading-[56px] leading-[34px]  font-normal capitalize text-center">Working with Digital shaping was a game-changer for our business. Their SEO strategies doubled our online traffic within months. Professionalism, creativity, and timely delivery – Digital shaping excels in every aspect. Our new website is a testament to their expertise.</h6>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <label for="carousel-3" class="carousel-control prev control-1">
+        <img src="./assets/img/arrow-left.png" alt="">
+      </label>
+      <label for="carousel-2" class="carousel-control next control-1">
+       
+        <img src="./assets/img/arrow-right.png" alt="">
+      </label>
+      <label for="carousel-1" class="carousel-control prev control-2">
+        <img src="./assets/img/arrow-left.png" alt="">
+      </label>
+      <label for="carousel-3" class="carousel-control next control-2">
+        <img src="./assets/img/arrow-right.png" alt="">
+      </label>
+      <label for="carousel-2" class="carousel-control prev control-3">
+        <img src="./assets/img/arrow-left.png" alt="">
+      </label>
+      <label for="carousel-1" class="carousel-control next control-3">
+        <img src="./assets/img/arrow-right.png" alt="">
+      </label>
+      <ol class="carousel-indicators">
+          <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+          </li>
+          <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+          </li>
+      </ol>
+ 
+  </div>
+ 
+</div>
+</div>
+</section>
+ <!-- customers reviews end here -->
+
+<!-- contact us section start here -->
+<section class="canvas-position">
+<div class="p-[5%]">
+  <div class="md:p-[5%] p-[7%]  border-color " >
+    <div class="flex justify-between md:flex-row flex-col items-center">
+      <h2 data-aos="fade-up" class="subheading capitalize font-light  leading-[66px] lg:text-[66px] md:text-[43px] text-2xl  md:pt-0 pt-5 text-center md:text-left">
+        Hello
+        <span class="hidden md:inline"><br></span>
+        Digital Shopping
+      </h2>
+      
+      <div class="justify-center flex rotate" onclick="if (!window.__cfRLUnblockHandlers) return false; multipleSplats(8) ">
+        <!--ring div starts here-->
+        <div class="fancy">
+          <i style="--clr: #00ff0a"></i>
+          <i style="--clr: #ff0057"></i>
+          <i style="--clr: #fffd44"></i>
+          <img
+            src="./assets/img/hero-2.png"
+            alt="logo-img"
+            
+          />
+        </div>
+        <!--ring div ends here-->
+      </div>
+    </div>
+
+  
+  <form data-aos="fade-up" class="md:col-span-12 pt-10" >
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="flex items-center">
+        <h2 class="text-white   subheading text-xs lg:text-4xl  font-light capitalize text-nowrap">My name is</h2>
+        <input class="appearance-none bg-transparent border-b border-textcolor w-full text-textcolor ml-5 pb-1 pl-5 leading-tight focus:outline-none focus:bg-transparent lowercase subheading  text-xs lg:text-lg font-normal" type="text" placeholder="Enter your name" aria-label="Full name">
+      </div>
+      <div class="flex items-center">
+        <h2 class="text-white subheading text-xs lg:text-4xl font-light capitalize text-nowrap">From</h2>
+        <input class="appearance-none bg-transparent border-b border-textcolor w-full text-textcolor ml-5 pb-1 pl-5 leading-tight focus:outline-none focus:bg-transparent lowercase subheading lg:text-lg  text-xs font-normal" type="text" placeholder="Company website or name" aria-label="Full name">
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:pt-20 pt-5">
+      <div class="flex md:items-center md:flex-row flex-col">
+        <h2 class="text-white subheading lg:text-4xl text-xs font-light capitalize text-nowrap">i’d like to discuss project</h2>
+        <input class="appearance-none bg-transparent border-b border-textcolor w-full text-textcolor md:ml-5 ml-0 pb-1  pl-5 sm:text-center leading-tight focus:outline-none focus:bg-transparent lowercase subheading lg:text-lg text-xs font-normal text-center md:text-left" type="text" placeholder="Describe your project (idea)" aria-label="Full name">
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-12 sm:gap-6  md:pt-20 pt-5">
+      <div class="col-span-12 md:col-span-9 flex md:flex-row flex-col md:items-center">
+        <h2 class="text-white subheading lg:text-4xl text-xs font-light capitalize text-nowrap">you can reach me at</h2>
+        <input class="appearance-none bg-transparent border-b border-textcolor w-full text-textcolor md:ml-5 ml-0 pb-1 pl-5 leading-tight focus:outline-none focus:bg-transparent lowercase subheading lg:text-lg text-xs font-normal text-center md:text-left" type="email" placeholder="kashanbhatti@gmail.com" aria-label="Full name">
+
+      </div>
+
+
+
+      <div class="col-span-12 md:col-span-3 flex md:flex-row flex-col md:items-center   md:pt-0 lg:pt-0 pt-5">
+        <h2 class="text-white subheading lg:text-4xl text-xs font-light capitalize text-nowrap">or</h2>
+        <input class="appearance-none bg-transparent border-b border-textcolor w-full text-textcolor md:ml-5 ml-0 pb-1 pl-5 leading-tight focus:outline-none focus:bg-transparent lowercase subheading lg:text-lg text-xs font-normal text-center md:text-left" type="email" placeholder="Other option" aria-label="Full name">
+
+      </div>
+    </div>
+    
+    <div class="flex justify-between w-full px-3 md:pt-20 pt-5 md:flex-row flex-col">
+      <div class="flex items-center">
+        <input class="mr-2 leading-tight border border-textcolor bg-transparent" type="checkbox">
+        <p class="md:text-lg text-xs text-textcolor subheading font-light ">
+          By filling this form agree with our
+          <span class="lg:text-lg text-xs text-white capitalize subheading font-normal">privacy policy</span>
+        </p>
+      </div>
+     <button class="  md: mt-0 mt-5 border border-white border-1 rounded-lg  subheading lg:text-lg text-xs capitalize font-semibold text-textcolor px-[70px] py-3">Send</button>
+    </div>
+  </form>
+</div>
+</div>
+</section>
+<!-- contact us section send here -->
+
+<!-- footer section start here-->
+<div class="flex justify-between p-[5%] items-center bg-black md:flex-row flex-col">
+  <div class="div">
+    <ul class="bodytext2 text-white lg:text-base text-sm font-light  flex  gap-8">
+      <li><Link to="" class="hover-effect">Terms & Conditions</Link></li>
+      <li><Link to="" class="hover-effect">Privacy Policy</Link></li>
+    </ul>
+  </div>
+  <div class="md:mt-0 mt-3">
+    <div class="flex items-center">
+      <img src="./assets/img/fotorlogo.png" alt="">
+    </div>
+  </div>
+  <div class="md:mt-0 mt-3">
+    <p class="bodytext2 text-white lg:text-base text-sm font-light">© 2023 Copyright by DigitalShaping</p>
+  </div>
+</div>
+<!-- footer section end here-->
+      
+    </section>
+
+    <!-- Script start here -->
+    <script
+      src="assets/js/script.js"
+      type="47e422a8f75a9fcabcf17f5e-text/javascript"
+    ></script>
+    <script
+      src="assets/js/canvas.js?ver=1.0"
+      type="47e422a8f75a9fcabcf17f5e-text/javascript"
+    ></script>
+    <script
+      src="assets/js/rocket-loader.min.js"
+      data-cf-settings="47e422a8f75a9fcabcf17f5e-|49"
+      defer=""
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script end here -->
+  </body>
+</html>

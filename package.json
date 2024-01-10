@@ -1,0 +1,19 @@
+{
+  "name":"DS-LATEST",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "description": "This website is developed by RISS",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/assets/css/style.css --watch",
+    "prettier":"npx prettier --write **/*.html"
+  },
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.5.10",
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  },
+  "author": "RISS",
+  "licenses": "RISS"
+}
